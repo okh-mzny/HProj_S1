@@ -15,7 +15,7 @@ The following table of transactions is represented as a Dict:
 transactionList = [
     {
         "amount": 100.00,
-        "date": "2021-01-13",
+        "date": "2021-01-14",
         "transaction_type": "sale"
     },
     {
