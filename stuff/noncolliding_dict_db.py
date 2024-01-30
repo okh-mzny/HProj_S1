@@ -53,7 +53,6 @@ printDict()
 
 # Delete a random record, make sure not to delete the indexPointer
 entryToDelete = random.randint(0, len(database) - 2)
-print(entryToDelete)
 
 print(f'###\n- - - DELETING ENTRY NO. {entryToDelete}\n###')
 database.pop(entryToDelete)
