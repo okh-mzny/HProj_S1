@@ -83,6 +83,9 @@ for line in tqdm(_infile_buffer):
             else:
                 parsed_block_map[offset] = data_byteArray
 
+if len(parsed_block_map) == 0:
+    raise ValueError("No memory dump found, have you selected the right file?")
+
 print(f'Found {len(parsed_block_map)} block(s) of memory:\n')
 for existing_offset, existing_data in parsed_block_map.items():
     print(
